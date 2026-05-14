@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Shot Nutrição Saudável | Saúde, Energia e Transformação</title>
+
+  <meta name="description"
+    content="Transforme sua saúde com suplementação inteligente, shots saudáveis, detox e energia natural.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8fbf5;
+      overflow-x: hidden;
+      color: #1c1c1c;
+    }
+
+    .hero-overlay {
+      background:
+        linear-gradient(to right,
+          rgba(0, 0, 0, .75),
+          rgba(0, 0, 0, .35));
+    }
+
+    .green {
+      color: #6BAF45;
+    }
+
+    .green-bg {
+      background: #6BAF45;
+    }
+
+    .green-bg:hover {
+      background: #5b963a;
+    }
+
+    .glass {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    .card {
+      transition: .5s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .zoom img {
+      transition: .7s;
+    }
+
+    .zoom:hover img {
+      transform: scale(1.08);
+    }
+
+    .shadow-soft {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #6BAF45, #95d36f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl border-b border-white/10">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <div class="flex items-center justify-between py-5">
+
+        <div>
+          <h1 class="text-white text-2xl lg:text-3xl font-bold">
+            Shot<span class="green">Nutrição</span>
+          </h1>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-10 text-white font-medium">
+
+          <a href="#inicio" class="hover:text-[#95d36f] transition">
+            Início
+          </a>
+
+          <a href="#beneficios" class="hover:text-[#95d36f] transition">
+            Benefícios
+          </a>
+
+          <a href="#produtos" class="hover:text-[#95d36f] transition">
+            Produtos
+          </a>
+
+          <a href="#resultados" class="hover:text-[#95d36f] transition">
+            Resultados
+          </a>
+
+          <a href="#depoimentos" class="hover:text-[#95d36f] transition">
+            Depoimentos
+          </a>
+
+        </nav>
+
+        <a href="https://wa.me/5511999999999"
+          class="green-bg text-white px-6 py-3 rounded-full font-semibold transition">
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden">
+
+    <img src="./img/hero.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Nutrição Saudável">
+
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-32 pb-20">
+
+      <div class="max-w-3xl">
+
+        <span class="uppercase tracking-[5px] text-[#95d36f] text-sm font-semibold">
+          Saúde • Energia • Bem-estar
+        </span>
+
+        <h2 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mt-6">
+
+          Transforme sua saúde com
+          <span class="gradient-text">
+            nutrição inteligente.
+          </span>
+
+        </h2>
+
+        <p class="text-gray-200 text-lg md:text-xl leading-relaxed mt-8 max-w-2xl">
+
+          Suplementos, shots saudáveis e soluções naturais
+          para emagrecimento, energia e qualidade de vida.
+
+        </p>
+
+        <div class="flex flex-col lg:flex-row flex-wrap gap-4 mt-10 w-full">
+
+          <!-- WHATSAPP -->
+          <a href="https://wa.me/5511999999999"
+            class="green-bg text-white px-8 py-5 rounded-full font-semibold text-center flex items-center justify-center min-h-[60px] transition-all duration-300 hover:scale-105">
+            Quero Transformar Minha Saúde
+          </a>
+
+          <!-- PRODUTOS -->
+          <a href="#produtos"
+            class="border border-white/20 text-white px-8 py-5 rounded-full font-semibold text-center hover:bg-white hover:text-black transition flex items-center justify-center min-h-[60px]">
+            Ver Produtos
+          </a>
+
+          <!-- INSTAGRAM -->
+          <a href="https://www.instagram.com/shotnutricao_saudavel_/" target="_blank"
+            class="border border-pink-500 bg-white text-pink-600 hover:bg-pink-600 hover:text-white px-8 py-5 rounded-full font-semibold text-center transition-all duration-300 flex items-center justify-center gap-3 min-h-[60px]">
+
+            <!-- ICON -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 flex-shrink-0" fill="currentColor"
+              viewBox="0 0 24 24">
+
+              <path
+                d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 1.8h8.5a3.95 3.95 0 013.95 3.95v8.5a3.95 3.95 0 01-3.95 3.95h-8.5a3.95 3.95 0 01-3.95-3.95v-8.5A3.95 3.95 0 017.75 3.8zm8.95 1.35a.9.9 0 100 1.8.9.9 0 000-1.8zM12 6.8A5.2 5.2 0 106.8 12 5.206 5.206 0 0012 6.8zm0 1.8A3.4 3.4 0 118.6 12 3.404 3.404 0 0112 8.6z" />
+            </svg>
+
+            <span>
+              Conheça nosso Instagram
+            </span>
+
+          </a>
+
+          <!-- YOUTUBE -->
+          <a href="https://www.youtube.com/@CanalHerbalatinos" target="_blank"
+            class="border border-red-500 bg-white text-red-600 hover:bg-red-600 hover:text-white px-8 py-5 rounded-full font-semibold text-center transition-all duration-300 flex items-center justify-center gap-3 min-h-[60px]">
+
+            <!-- ICON -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0" fill="currentColor"
+              viewBox="0 0 24 24">
+
+              <path
+                d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 00.5 6.2 31.7 31.7 0 000 12a31.7 31.7 0 00.5 5.8 3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1A31.7 31.7 0 0024 12a31.7 31.7 0 00-.5-5.8zM9.8 15.5v-7L16 12l-6.2 3.5z" />
+            </svg>
+
+            <span>
+              Conheça nosso YouTube
+            </span>
+
+          </a>
+
+        </div>
+
+        <!-- CARDS -->
+        <div class="flex flex-wrap justify-center items-center gap-4 mt-14">
+
+          <!-- CARD -->
+          <div class="glass rounded-[24px] px-6 py-5 flex items-center justify-center min-w-[220px]">
+
+            <div class="flex items-center gap-3 text-white whitespace-nowrap">
+
+              <span class="text-2xl leading-none">
+                ⚡
+              </span>
+
+              <span class="text-xl font-semibold leading-none">
+                Energia
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="glass rounded-[24px] px-6 py-5 flex items-center justify-center min-w-[280px]">
+
+            <div class="flex items-center gap-3 text-white whitespace-nowrap">
+
+              <span class="text-2xl leading-none">
+                🔥
+              </span>
+
+              <span class="text-xl font-semibold leading-none">
+                Emagrecimento
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="glass rounded-[24px] px-6 py-5 flex items-center justify-center min-w-[210px]">
+
+            <div class="flex items-center gap-3 text-white whitespace-nowrap">
+
+              <span class="text-2xl leading-none">
+                🍃
+              </span>
+
+              <span class="text-xl font-semibold leading-none">
+                Detox
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="glass rounded-[24px] px-6 py-5 flex items-center justify-center min-w-[250px]">
+
+            <div class="flex items-center gap-3 text-white whitespace-nowrap">
+
+              <span class="text-2xl leading-none">
+                🛡️
+              </span>
+
+              <span class="text-xl font-semibold leading-none">
+                Imunidade
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="glass rounded-[24px] px-6 py-5 flex items-center justify-center min-w-[260px]">
+
+            <div class="flex items-center gap-3 text-white whitespace-nowrap">
+
+              <span class="text-2xl leading-none">
+                💪
+              </span>
+
+              <span class="text-xl font-semibold leading-none">
+                Performance
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE -->
+  <section class="py-24 bg-white px-6 lg:px-8">
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+
+        <span class="uppercase tracking-[5px] text-[#6BAF45] text-sm font-semibold">
+          Sobre Nós
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6 leading-tight">
+
+          Saúde, bem-estar
+          e transformação.
+
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-relaxed mt-8">
+
+          A Shot Nutrição Saudável nasceu para transformar vidas através da alimentação saudável,
+          suplementação inteligente e hábitos positivos.
+
+          Trabalhamos com produtos premium para quem busca mais energia,
+          emagrecimento saudável, disposição e qualidade de vida.
+
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-6 mt-12">
+
+          <div>
+            <div class="text-5xl green">✦</div>
+            <p class="mt-4 font-medium">
+              Nutrição Inteligente
+            </p>
+          </div>
+
+          <div>
+            <div class="text-5xl green">✦</div>
+            <p class="mt-4 font-medium">
+              Energia Natural
+            </p>
+          </div>
+
+          <div>
+            <div class="text-5xl green">✦</div>
+            <p class="mt-4 font-medium">
+              Vida Saudável
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="zoom overflow-hidden rounded-[40px] shadow-soft">
+
+        <img src="./img/SOBRE.jpg" class="w-full h-[650px] object-cover" alt="Lifestyle saudável">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios" class="py-24 bg-[#f4f9ef] px-6 lg:px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <!-- TÍTULO -->
+      <div class="text-center mb-16">
+
+        <span class="uppercase tracking-[5px] text-[#6BAF45] text-sm font-semibold">
+          Benefícios
+        </span>
+
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mt-6 text-[#111] leading-tight">
+          Mais saúde, energia e bem-estar para sua rotina.
+        </h2>
+
+        <p class="text-gray-600 text-lg mt-6 max-w-3xl mx-auto leading-relaxed">
+          Combinações naturais desenvolvidas para ajudar no foco,
+          disposição, metabolismo e equilíbrio do corpo.
+        </p>
+
+      </div>
+
+      <!-- CARDS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+        <!-- CARD -->
+        <div
+          class="bg-white rounded-[32px] p-8 shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center gap-5">
+
+          <div class="w-20 h-20 rounded-2xl bg-[#f4f9ef] flex items-center justify-center text-4xl shrink-0">
+            ⚡
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-[#111]">
+              Mais disposição
+            </h3>
+
+            <p class="text-gray-600 mt-2 leading-relaxed">
+              Energia natural para enfrentar a rotina com mais foco e produtividade.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="bg-white rounded-[32px] p-8 shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center gap-5">
+
+          <div class="w-20 h-20 rounded-2xl bg-[#fff5ec] flex items-center justify-center text-4xl shrink-0">
+            🔥
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-[#111]">
+              Metabolismo ativo
+            </h3>
+
+            <p class="text-gray-600 mt-2 leading-relaxed">
+              Auxilia na aceleração natural do metabolismo e na queima calórica.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="bg-white rounded-[32px] p-8 shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center gap-5">
+
+          <div class="w-20 h-20 rounded-2xl bg-[#eef9f1] flex items-center justify-center text-4xl shrink-0">
+            🍃
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-[#111]">
+              Detox natural
+            </h3>
+
+            <p class="text-gray-600 mt-2 leading-relaxed">
+              Ajuda na limpeza do organismo e promove sensação de leveza.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="bg-white rounded-[32px] p-8 shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center gap-5">
+
+          <div class="w-20 h-20 rounded-2xl bg-[#f1f6ff] flex items-center justify-center text-4xl shrink-0">
+            💪
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-[#111]">
+              Performance
+            </h3>
+
+            <p class="text-gray-600 mt-2 leading-relaxed">
+              Mais resistência física e energia para treinos e atividades diárias.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="bg-white rounded-[32px] p-8 shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center gap-5">
+
+          <div class="w-20 h-20 rounded-2xl bg-[#eefaf4] flex items-center justify-center text-4xl shrink-0">
+            🛡️
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-[#111]">
+              Imunidade
+            </h3>
+
+            <p class="text-gray-600 mt-2 leading-relaxed">
+              Nutrientes naturais que fortalecem e equilibram o organismo.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="bg-white rounded-[32px] p-8 shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center gap-5">
+
+          <div class="w-20 h-20 rounded-2xl bg-[#fff0f3] flex items-center justify-center text-4xl shrink-0">
+            ❤️
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-[#111]">
+              Bem-estar diário
+            </h3>
+
+            <p class="text-gray-600 mt-2 leading-relaxed">
+              Sensação de equilíbrio, leveza e qualidade de vida todos os dias.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUTOS -->
+  <section id="produtos" class="py-24 bg-white px-6 lg:px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-16">
+
+        <span class="uppercase tracking-[5px] text-[#6BAF45] text-sm font-semibold">
+          Produtos
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6">
+          Nutrição premium para sua transformação.
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- CARD -->
+        <div class="bg-[#f8fbf5] rounded-[30px] overflow-hidden shadow-soft card">
+
+          <img src="./img/Shots Saudáveis.jfif" class="w-full h-[300px] object-cover" alt="">
+
+          <div class="p-8">
+
+            <h3 class="text-3xl font-semibold">
+              Shots Saudáveis
+            </h3>
+
+            <p class="text-gray-600 mt-4">
+              Combinação poderosa para energia, imunidade e metabolismo.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-[#f8fbf5] rounded-[30px] overflow-hidden shadow-soft card">
+
+          <img src="./img/Detox.jfif" class="w-full h-[300px] object-cover" alt="">
+
+          <div class="p-8">
+
+            <h3 class="text-3xl font-semibold">
+              Detox
+            </h3>
+
+            <p class="text-gray-600 mt-4">
+              Auxilia na limpeza do organismo e melhora do bem-estar.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-[#f8fbf5] rounded-[30px] overflow-hidden shadow-soft card">
+
+          <img src="./img/Energia Natural.jfif" class="w-full h-[300px] object-cover" alt="">
+
+          <div class="p-8">
+
+            <h3 class="text-3xl font-semibold">
+              Energia Natural
+            </h3>
+
+            <p class="text-gray-600 mt-4">
+              Mais disposição e foco para sua rotina.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESULTADOS -->
+  <section id="resultados" class="py-24 bg-[#f4f9ef] px-6 lg:px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center">
+
+        <span class="uppercase tracking-[5px] text-[#6BAF45] text-sm font-semibold">
+          Resultados
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6">
+          Pessoas transformando suas vidas.
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-16">
+
+        <div class="bg-white rounded-[30px] p-10 text-center shadow-soft">
+          <h3 class="text-6xl font-bold green">
+            +500
+          </h3>
+          <p class="text-gray-600 mt-4">
+            Clientes satisfeitos
+          </p>
+        </div>
+
+        <div class="bg-white rounded-[30px] p-10 text-center shadow-soft">
+          <h3 class="text-6xl font-bold green">
+            +1000
+          </h3>
+          <p class="text-gray-600 mt-4">
+            Produtos vendidos
+          </p>
+        </div>
+
+        <div class="bg-white rounded-[30px] p-10 text-center shadow-soft">
+          <h3 class="text-6xl font-bold green">
+            95%
+          </h3>
+          <p class="text-gray-600 mt-4">
+            Satisfação
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="py-24 bg-white px-6 lg:px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-16">
+
+        <span class="uppercase tracking-[5px] text-[#6BAF45] text-sm font-semibold">
+          Depoimentos
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6">
+          O que nossos clientes dizem.
+        </h2>
+
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+
+        <div class="bg-[#f8fbf5] rounded-[30px] p-10 shadow-soft">
+
+          <div class="text-[#6BAF45] text-2xl">
+            ★★★★★
+          </div>
+
+          <p class="text-gray-600 text-lg leading-relaxed mt-6">
+            “Me sinto com muito mais disposição e energia.”
+          </p>
+
+        </div>
+
+        <div class="bg-[#f8fbf5] rounded-[30px] p-10 shadow-soft">
+
+          <div class="text-[#6BAF45] text-2xl">
+            ★★★★★
+          </div>
+
+          <p class="text-gray-600 text-lg leading-relaxed mt-6">
+            “Os shots mudaram completamente minha rotina.”
+          </p>
+
+        </div>
+
+        <div class="bg-[#f8fbf5] rounded-[30px] p-10 shadow-soft">
+
+          <div class="text-[#6BAF45] text-2xl">
+            ★★★★★
+          </div>
+
+          <p class="text-gray-600 text-lg leading-relaxed mt-6">
+            “Excelente qualidade e atendimento impecável.”
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="relative py-32 overflow-hidden">
+
+    <img src="./img/CTA.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+
+      <span class="uppercase tracking-[5px] text-[#95d36f] text-sm font-semibold">
+        Transforme sua saúde
+      </span>
+
+      <h2 class="text-white text-5xl md:text-6xl font-bold mt-6 leading-tight">
+        Comece hoje sua transformação.
+      </h2>
+
+      <a href="https://wa.me/5511999999999"
+        class="inline-block mt-10 green-bg text-white px-10 py-5 rounded-full font-semibold">
+        Falar no WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#111] text-white py-16 px-6 lg:px-8">
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+
+      <div>
+
+        <h3 class="text-3xl font-bold">
+          Shot Nutrição
+        </h3>
+
+        <p class="text-gray-400 mt-4">
+          Saúde, bem-estar e transformação.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4 class="font-semibold text-xl">
+          Instagram
+        </h4>
+
+        <p class="text-gray-400 mt-4">
+          @shotnutricao_saudavel_
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4 class="font-semibold text-xl">
+          YouTube
+        </h4>
+
+        <p class="text-gray-400 mt-4">
+          Canal Herbalatinos
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4 class="font-semibold text-xl">
+          Contato
+        </h4>
+
+        <p class="text-gray-400 mt-4">
+          WhatsApp • Atendimento Online
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 mt-14 pt-8 text-center text-gray-500">
+      © 2026 Shot Nutrição Saudável • Todos os direitos reservados.
+    </div>
+
+  </footer>
+
+  <!-- BOTÃO WHATS -->
+  <a href="https://wa.me/5511999999999"
+    class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#1ebe57] w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl shadow-2xl z-50 transition">
+    ✆
+  </a>
+
+</body>
+
+</html>
