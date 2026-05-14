@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shot-nutricao.vercel.app/sitemap.xml
